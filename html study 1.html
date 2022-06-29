@@ -1,0 +1,47 @@
+<!-- 브라우저에게 이건 text파일이 아니라 'html문서'라고 알려주는 코드 -->
+<!DOCTYPE html>
+<!-- lang 속성 설정으로 검색엔진들에게 도움이 된다.-->
+<html lang="kr">
+  <!-- 웹페이지의 (보이지 않는)환경을 설정-->
+  <head>
+    <!-- 웹페이지의 탭에 아이콘 설정-->
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
+    />
+    <!-- 웹페이지의 탭 이름(제목)을 변경-->
+    <title>Cosmos Home</title>
+    <!-- 브라우저에게 text를 어떻게 출력할것인지 전달 (예: 한글 / 특수문자등)-->
+    <meta charset="UTF-8" />
+    <!-- 검색엔진을 통해 노출되는 윂페이지 요약정보 -->
+    <meta name="description" content="This is m website" />
+  </head>
+  <!-- 사용자가 볼 수 있는 content 설정-->
+  <body>
+    <p>
+      마우스 커서를 글자 위에 올려놓으면
+      <abbr title="HyperText Markup Language">HTML</abbr>이 무엇의 약자인지 알
+      수 있어요!
+    </p>
+
+    <p>mark 태그를 사용하면 <mark>하이라이트</mark> 효과를 낼 수 있어요!</p>
+
+    <!-- 웹에 존재하는 이미지 불러오기-->
+    <img
+      src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_960_720.jpg"
+    />
+
+    <!-- html과 같은 폴더 안에 있는 이미지파일 불러오기 -->
+    <img src="cosmos.jpg" />
+
+    <!-- 폴더안에 이미지 파일이 존재할 경우(경로 표시법)-->
+    <img src="folder/cosmos.jpg" />
+
+    <!--링크를 클릭하면 같은 브라우저에서 페이지가 열린다-->
+    <a href="google.com" target="_self">Go to google</a>
+
+    <!--링크를 클릭하면 새로운 브라우저에서 페이지가 열린다-->
+    <a href="google.com" target="_blank">Go to google</a>
+  </body>
+</html>
