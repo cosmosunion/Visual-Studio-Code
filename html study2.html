@@ -1,0 +1,42 @@
+<!-- form tags (양식태그)-->
+
+<html>
+  <head> </head>
+  <body>
+    <form>
+      <!-- <input> : 사용자가 입력 가능한 박스 생성
+      ※ <input> 요소의 동작 방식은 type 특성에 따라 달라진다. 
+      ※ <input>의 attributes :
+          type(입력방식; text(문자열)/password(비밀번호형식)/submit(제출버튼)/file(업로드버튼)
+          *submit=버튼/value로 이름변경 가능
+          *file=버튼/accept로 특정file만 선택할 수 있게 제한 가능
+          placeholder(박스안 내용)
+          disabled(비활성화) 
+          required(입력박스마다 사용자에게 validation팝업 생성)
+          minlength(최소 글자 수 조건값 설정)-->
+
+      <!-- accpet="image/*" : jpg/png/jpeg등 어떤 이미지파일도 가능 -->
+      <input type="file" accept="image/*" />
+      <br />
+      <input type="text" placeholder="name" />
+      <input type="text" placeholder="last name" disabled />
+      <input type="text" placeholder="username" required />
+      <input type="password" placeholder="password" disabled />
+      <!-- 웹페이지에 생성된 submit(제출) 버튼을 클릭 → 페이지 새로고침-->
+      <input type="submit" value="Create Account" />
+
+      <!-- <label> : 인터페이스 항목의 설명 / 클릭 시 해당 input으로 이동
+      ※ 항상 <input>태그와 함께 (다른 줄에)사용하고 label for과 input id값이 같아야 한다. -->
+      <br />
+      <label for="profile">Profile photo</label>
+      <input id="profile" type="file" accept=".png, .pdf" />
+      <br />
+      <label for="website">URL을 입력하세요 : </label>
+      <input id="website" type="url" placeholder="URL" required />
+      <input type="submit" value="확인" />
+
+      <!-- id는 body안에 그 어떤 태그에든 넣을 수 있는 attribute
+           * Unique Identifier - element당 하나의 id만 가질 수 있다. -->
+    </form>
+  </body>
+</html>
