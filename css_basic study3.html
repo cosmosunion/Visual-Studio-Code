@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning CSS</title>
+    <style>
+      body {
+        height: 100vh;
+        /* 100 vh(viewport=screen, height) = 화면 높이의 100% */
+
+        margin: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        /* 가로 정렬방식 : 얼마나 빈 공간을 나누어 정렬할지 자동 계산
+           center(중앙정렬)
+           flex-start(왼쪽정렬)
+           flex-end(오른쪽정렬)
+           space-evenly(가로간격 동일하게 정렬)등 */
+        align-items: center;
+        flex-direction: column;
+        /* flex-direction (default값: row)을 column으로 변경시
+           기준 축 방향이 반대로 변경된다. */
+      }
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
