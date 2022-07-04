@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        background-color: slateblue;
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+      }
+      /*Pseudo Selectors*/
+      div:first-child {
+        background-color: lightcoral;
+      }
+      div:last-child {
+        background-color: red;
+      }
+      /* 차례(2) 뿐만 아니라 even/odd/2n+1 등 가능 */
+      span:nth-child(2) {
+        color: darkturquoise;
+        font-size: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span>COSMOS</span>
+    <span>COSMOS</span>
+    <span>COSMOS</span>
+    <span>COSMOS</span>
+    <span>COSMOS</span>
+  </body>
+</html>
