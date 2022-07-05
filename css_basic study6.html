@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* :optional : <input>,<select>,<textarea>요소 중 
+         required 속성을 갖고 있지 않는 나머지 요소들 지정 */
+      input:optional {
+        border: 1px solid blue;
+      }
+      input:required {
+        border: 1px solid tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="username" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>
